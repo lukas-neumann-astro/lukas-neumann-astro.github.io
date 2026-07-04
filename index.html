@@ -77,6 +77,9 @@
 								<li>
 									<a href="#research">Research</a>
 								</li>
+								<li>
+									<a href="#software">Software</a>
+								</li>
 <!-- 								<li>
 									<a href="#outreach">Outreach</a>
 								</li> -->
@@ -241,6 +244,30 @@
 								<span class="image main">
 								<img src="images/lego_sf_clouds.png" alt=""/>
 								</span>
+							</p>
+						</article>
+						
+						<!-- Here is the "Software" card. -->
+						<article id="software">
+							<h2 class="major">Software</h2>
+							<p>
+								Alongside my research, I enjoy developing and maintaining open-source Python tools for the astronomical community.
+								Below are two packages I have co-developed within the PHANGS collaboration.
+							</p>
+							<p>
+								<b>HexMaps</b> (<a href="https://github.com/PhangsTeam/astro-HexMaps">GitHub</a>)<br>
+								HexMaps is a Python package for homogenising and analysing multi-wavelength astronomical datasets on a common hexagonal grid.
+								It combines heterogeneous 2D maps and 3D spectral cubes, observed at different angular resolutions and pixel scales, into a single science-ready table for sightline-by-sightline analysis.
+								Given a set of input data, HexMaps regrids all maps and cubes onto a common hexagonal sampling grid, computes moment maps (integrated intensity, velocity, line width, peak temperature) and shuffled spectra for every line, and writes out FITS images alongside a combined Astropy table.
+								HexMaps is the successor to the original PyStructure pipeline, refactored into a pip-installable package with a clean command-line interface.
+								It has been used in several peer-reviewed studies, including den Brok et al. (2021, 2022, 2023, 2025), Eibensteiner et al. (2022, 2023), Neumann et al. (2023), and Stuber et al. (2025).
+							</p>
+							<p>
+								<b>PyStacker</b> (<a href="https://github.com/PhangsTeam/PyStacker">GitHub</a>)<br>
+								PyStacker is a public Python package that performs spectral stacking of radio-interferometric data to recover faint molecular line emission hidden in the noise.
+								The code shifts spectra onto a common velocity field, defined by a high signal-to-noise prior line, and then averages them within bins of a chosen physical quantity such as galactocentric radius, star formation rate, or morphological environment.
+								It accepts either a HexMaps/PyStructure database or raw FITS data cubes as input.
+								PyStacker was presented and validated against simulated ALMA observations in Neumann et al. (2023, A&A) and has since been used across several PHANGS studies to recover dense gas emission at high significance.
 							</p>
 						</article>
 
